@@ -1,0 +1,5 @@
+market\Market1Application.class
+market\repository\ProductRepository.class
+market\entity\Product.class
+market\repository\CustomerRepository.class
+market\entity\Customer.class
