@@ -1,5 +1,7 @@
-market\Market1Application.class
 market\repository\ProductRepository.class
-market\entity\Product.class
+dto\OrderRequest.class
 market\repository\CustomerRepository.class
+market\Market1Application.class
+market\controller\OrderController.class
+market\entity\Product.class
 market\entity\Customer.class

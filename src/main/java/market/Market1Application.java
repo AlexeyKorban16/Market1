@@ -4,14 +4,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class  Market1Application {
+public class Market1Application {
 
-    public static void main(String[] args)
+    public static void main(String[] args) {
 
-
-    {
-
-        SpringApplication.run( Market1Application.class, args);
+        SpringApplication.run(Market1Application.class, args);
     }
 
 }

@@ -2,27 +2,35 @@ package market.entity;
 
 import jakarta.persistence.Entity;
 
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import lombok.ToString;
-import org.yaml.snakeyaml.events.Event;
 
 
-
-@Data
+@Setter
+@Getter
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
 @Entity
 public class Product {
-    @Id
 
-    private int servicelife;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int id;
     private String productName;
     private int capacity;
     private int price;
-   // private String reducingcountry;
+
+    @ManyToOne
+    private Customer customer;
 
 }

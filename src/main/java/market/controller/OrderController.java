@@ -1,8 +1,8 @@
 package market.controller;
 
-import fororders.OrderRequest;
+
+import market.dto.OrderRequest;
 import market.entity.Customer;
-import market.entity.Product;
 import market.repository.CustomerRepository;
 import market.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
